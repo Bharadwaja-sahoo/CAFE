@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaCoo Cafe</title>
+    <link rel="icon" href="../assets/images/logo.png" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/files/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/files/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/files/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/files/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/files/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body class="starter-page-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <i class="bi bi-fork-knife"></i>
+                <h1 class="sitename">KaCoo</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./menu.html" class="active">Menu</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)"><span>More Pages</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+                        <ul>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                            <li><a href="./privacy_and_policy.html">Privacy Policy</a></li>
+                            <li><a href="./terms_and_conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted d-none d-sm-block" href="./book_your_table.html">Book a Table</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title" data-aos="fade">
+            <div class="heading">
+                <div class="container">
+                    <div class="row d-flex justify-content-center text-center">
+                        <div class="col-lg-8">
+                            <h1>Menu</h1>
+                            <p class="mb-0">Explore our selection of freshly crafted dishes and signature beverages made to delight every taste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="breadcrumbs">
+                <div class="container">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="current">Menu</li>
+                    </ol>
+                </div>
+            </nav>
+        </div>
+        <!-- End Page Title -->
+        <!-- Menu Section -->
+        <section id="menu" class="menu section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Menu</h2>
+                <p>Explore our carefully crafted menu featuring fresh ingredients, comforting flavors, and brews made to brighten your day.</p>
+            </div>
+            <!-- End Section Title -->
+             
+            <div class="container" data-aos="fade-up">
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                    <div class="menu-filters isotope-filters mb-5">
+                        <ul>
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-starters">Starters</li>
+                            <li data-filter=".filter-main">Main Courses</li>
+                            <li data-filter=".filter-dessert">Desserts</li>
+                            <li data-filter=".filter-drinks">Drinks</li>
+                        </ul>
+                    </div>
+                    <div class="menu-container isotope-container row gy-4">
+                        <!-- Regular Menu Items -->
+                        <div class="col-lg-6 isotope-item filter-starters">
+                            <div class="menu-item d-flex align-items-center gap-4">
+                                <img src="../assets/images/starter-2.webp" alt="Starter"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Bruschetta Trio <span class="menu-tag">Vegetarian</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$8.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-starters">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/starter-5.webp" alt="Starter"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Calamari Fritti <span class="menu-tag">Seafood</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$10.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-main">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/main-1.webp" alt="Main Course"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Wild Mushroom Risotto <span class="menu-tag">Vegetarian</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$18.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-main">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/main-4.webp" alt="Main Course"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Braised Lamb Shank <span class="menu-tag">Chef's Choice</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$26.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-dessert">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/dessert-2.webp" alt="Dessert"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Chocolate Lava Cake <span class="menu-tag">Gluten Free</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$9.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-dessert">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/dessert-7.webp" alt="Dessert"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Tiramisu <span class="menu-tag">Classic</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$8.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-drinks">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/drink-3.webp" alt="Drink"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Signature Cocktail <span class="menu-tag">Alcoholic</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$12.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 isotope-item filter-drinks">
+                            <div class="d-flex menu-item align-items-center gap-4">
+                                <img src="../assets/images/drink-8.webp" alt="Drink"
+                                    class="menu-img img-fluid rounded-3">
+                                <div class="menu-content">
+                                    <h5>Berry Smoothie <span class="menu-tag">Non-Alcoholic</span></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
+                                    <div class="price">$7.95</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="../assets/images/Kacoo.pdf " class="download-menu">
+                        <i class="bi bi-file-earmark-pdf"></i> Download Full Menu
+                    </a>
+                </div>
+
+                <!-- Chef's Specials -->
+                <div class="col-12 mt-5" data-aos="fade-up">
+                    <div class="specials-badge">
+                        <span><i class="bi bi-award"></i> Chef's Specials</span>
+                    </div>
+                    <div class="specials-container">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="menu-item special-item">
+                                    <div class="menu-item-img">
+                                        <img src="../assets/images/main-3.webp" alt="Special Dish" class="img-fluid">
+                                        <div class="menu-item-badges">
+                                            <span class="badge-special">Special</span>
+                                            <span class="badge-vegan">Vegan</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-content">
+                                        <h4>Mediterranean Grilled Salmon</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut aliquam
+                                            metus. Vivamus fermentum magna quis.</p>
+                                        <div class="menu-item-price">$24.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="menu-item special-item">
+                                    <div class="menu-item-img">
+                                        <img src="../assets/images/main-7.webp" alt="Special Dish" class="img-fluid">
+                                        <div class="menu-item-badges">
+                                            <span class="badge-special">Special</span>
+                                            <span class="badge-spicy">Spicy</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-content">
+                                        <h4>Signature Ribeye Steak</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan risus
+                                            ut dui pretium, eget elementum nisi.</p>
+                                        <div class="menu-item-price">$32.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Menu Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="../index.html" class="logo d-flex align-items-center">
+                        <img src="../assets/images/icon.png" alt="">
+                        <span class="sitename">KaCoo</span>
+                    </a>
+                    <p>From our kitchen to your table, we serve freshness, warmth, and unforgettable taste. Your daily
+                        escape for fresh brews, warm bites, and peaceful conversations. <br>
+                        Brewing comfort, serving smiles. A cozy space where great coffee and good moments come together.
+                    </p>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./menu.html">Menu</a></li>                        
+                        <li><a href="./events.html">Events</a></li>                        
+                        <li><a href="./contact.html">Contact Us</a></li>                        
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>More Pages</h4>
+                    <ul>
+                        <li><a href="./book_your_table.html">Book A Table</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                        <li><a href="./terms_and_conditions.html">Terms of service</a></li>
+                        <li><a href="./privacy_and_policy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>Plot No. 215, Saheed Nagar</p>
+                    <p>Bhubaneswar, Odisha 751007</p>
+                    <p>India</p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+91 98*** ***10</span></p>
+                    <p><strong>Email:</strong> <span>hello@kacoocafe.com</span></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">KaCooo Cafe & Restro</strong> <span>All Rights
+                    Reserved</span></p>
+            <div class="credits">
+                Designed by <a href="#">MangoTech.</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/files/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../assets/files/php-email-form/validate.js"></script> -->
+    <script src="../assets/files/aos/aos.js"></script>
+    <script src="../assets/files/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/files/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/files/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/files/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
