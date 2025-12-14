@@ -23,7 +23,6 @@
 
     <!-- Vendor CSS Files -->
     <link href="../assets/files/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/files/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/files/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="../assets/files/aos/aos.css" rel="stylesheet" />
     <link href="../assets/files/swiper/swiper-bundle.min.css" rel="stylesheet" />
@@ -116,9 +115,7 @@
             <!-- End Section Title -->
 
             <!-- Flipbook Container -->
-            <div id="flipbook" class="_df_book"
-                source="https://bharadwaja-sahoo.github.io/CAFE/assets/images/Kacoo.pdf">
-            </div>
+            <div id="flipbook"></div>
             <!--/ Flipbook Container -->
              
             <div class="container" data-aos="fade-up">
@@ -379,14 +376,14 @@
     <script>
         // Initialize Flipbook
         $(document).ready(function () {
-        $("#flipbook").flipBook({
-            pdf: "https://bharadwaja-sahoo.github.io/CAFE/assets/images/Kacoo.pdf",
-            webgl: true,
-            backgroundColor: "#ffffff",
-            enableDownload: true,
-            enableSound: true,
-            maxTextureSize: 1600
-        });
+            $("#flipbook").flipBook({
+                pdf: "https://bharadwaja-sahoo.github.io/CAFE/assets/images/Kacoo.pdf",
+                webgl: true,
+                backgroundColor: "#ffffff",
+                enableDownload: true,
+                enableSound: true,
+                maxTextureSize: 1600
+            });
         });
     </script>
 </body>
