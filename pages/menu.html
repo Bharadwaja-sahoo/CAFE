@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaCoo Cafe</title>
-    <link rel="icon" href="../assets/images/logo.png" />
+    
+    <!-- Primary SEO Tags -->
+    <title>KaCoo Cafe & Restro | Menu | Best Cafe for Coffee, Food & Cozy Dining</title>
+    <meta name="description" content="KaCoo Cafe & Restro offers freshly brewed coffee, delicious food, cozy ambience, and a perfect place for friends, couples, and corporate gatherings. Visit us for a delightful dining experience." />
+    <meta name="keywords" content="KaCoo Cafe, cafe and restro, best cafe in Bhubaneswar, coffee shop, restaurant, food and beverages, cafe near me, cozy cafe, couple friendly cafe, corporate dining" />
+    <meta name="author" content="KaCoo Cafe & Restro" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" href="../assets/images/icon.png" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -23,6 +30,23 @@
 
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- dFlip CSS -->
+    <link rel="stylesheet" href="https://iriscafe.in/wp-content/plugins/dflip/assets/css/dflip.min.css">
+    <style>
+        #flipbook {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            margin: 20px auto;
+            }
+
+            @media (max-width:600px) {
+            #flipbook {
+                height: 420px;
+            }
+        }
+    </style>
 </head>
 
 <body class="starter-page-page">
@@ -90,6 +114,12 @@
                 <p>Explore our carefully crafted menu featuring fresh ingredients, comforting flavors, and brews made to brighten your day.</p>
             </div>
             <!-- End Section Title -->
+
+            <!-- Flipbook Container -->
+            <div id="flipbook" class="_df_book"
+                source="../assets/images/Kacoo.pdf">
+            </div>
+            <!--/ Flipbook Container -->
              
             <div class="container" data-aos="fade-up">
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
@@ -203,7 +233,7 @@
                 </div>
 
                 <div class="text-center mt-5" data-aos="fade-up">
-                    <a href="../assets/images/Kacoo.pdf " class="download-menu">
+                    <a href="../assets/images/Kacoo.pdf" class="download-menu">
                         <i class="bi bi-file-earmark-pdf"></i> Download Full Menu
                     </a>
                 </div>
@@ -326,9 +356,17 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
+
+    <!-- jQuery (Required) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- pdf.js (Required) -->
+    <script src="https://iriscafe.in/wp-content/plugins/dflip/assets/js/libs/pdf.min.js"></script>
+    <!-- three.js (Required) -->
+    <script src="https://iriscafe.in/wp-content/plugins/dflip/assets/js/libs/three.min.js"></script>
+    <!-- REAL dFlip JS (jQuery Version) -->
+    <script src="https://iriscafe.in/wp-content/plugins/dflip/assets/js/dflip.min.js"></script>
     <!-- Vendor JS Files -->
     <script src="../assets/files/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="../assets/files/php-email-form/validate.js"></script> -->
     <script src="../assets/files/aos/aos.js"></script>
     <script src="../assets/files/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/files/purecounter/purecounter_vanilla.js"></script>
@@ -338,5 +376,18 @@
     <!-- Main JS File -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        // Initialize Flipbook
+        $(document).ready(function () {
+        $("#flipbook").flipBook({
+            pdf: "../assets/images/Kacoo.pdf",
+            webgl: true,
+            backgroundColor: "#ffffff",
+            enableDownload: true,
+            enableSound: true,
+            maxTextureSize: 1600
+        });
+        });
+    </script>
 </body>
 </html>

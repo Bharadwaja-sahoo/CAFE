@@ -1003,7 +1003,7 @@ section,
   }
 
   .hero .hero-container .hero-swiper .swiper-slide .img-container {
-    height: calc(70vh - 80px);
+    height: calc(100vh - 60px);
   }
 
   .hero .hero-container .hero-swiper .swiper-button-next,
