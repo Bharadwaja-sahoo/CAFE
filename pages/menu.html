@@ -29,23 +29,6 @@
 
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <!-- dFlip CSS -->
-    <link rel="stylesheet" href="https://iriscafe.in/wp-content/plugins/dflip/assets/css/dflip.min.css">
-    <style>
-        #flipbook {
-            width: 100%;
-            max-width: 900px;
-            height: 600px;
-            margin: 20px auto;
-            }
-
-            @media (max-width:600px) {
-            #flipbook {
-                height: 420px;
-            }
-        }
-    </style>
 </head>
 
 <body class="starter-page-page">
@@ -113,12 +96,6 @@
                 <p>Explore our carefully crafted menu featuring fresh ingredients, comforting flavors, and brews made to brighten your day.</p>
             </div>
             <!-- End Section Title -->
-
-            <!-- Flipbook Container -->
-            <div id="flipbook" class="_df_book"
-                source="https://bharadwaja-sahoo.github.io/CAFE/assets/images/Kacoo.pdf">
-            </div>
-            <!--/ Flipbook Container -->
              
             <div class="container" data-aos="fade-up">
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
@@ -355,15 +332,6 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
-
-    <!-- jQuery (Required) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- pdf.js (Required) -->
-    <script src="https://iriscafe.in/wp-content/plugins/dflip/assets/js/libs/pdf.min.js"></script>
-    <!-- three.js (Required) -->
-    <script src="https://iriscafe.in/wp-content/plugins/dflip/assets/js/libs/three.min.js"></script>
-    <!-- REAL dFlip JS (jQuery Version) -->
-    <script src="https://iriscafe.in/wp-content/plugins/dflip/assets/js/dflip.min.js"></script>
     <!-- Vendor JS Files -->
     <script src="../assets/files/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/files/aos/aos.js"></script>
@@ -375,18 +343,5 @@
     <!-- Main JS File -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script>
-        // Initialize Flipbook
-        $(document).ready(function () {
-        $("#flipbook").flipBook({
-            pdf: "https://bharadwaja-sahoo.github.io/CAFE/assets/images/Kacoo.pdf",
-            webgl: true,
-            backgroundColor: "#ffffff",
-            enableDownload: true,
-            enableSound: true,
-            maxTextureSize: 1600
-        });
-        });
-    </script>
 </body>
 </html>
